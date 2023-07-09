@@ -1,11 +1,3 @@
-.square {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-}
-
-.flex {
-  display: flex;
-  height: 400px;
-  align-items: center;
+.Hero {
+  height: 200vh;
 }

@@ -13,7 +13,7 @@
   font-family: "BigBlue";
 }
 
-.welcome,
-.load {
+.Greeting :is(.welcome, .load) {
+  font-family: "BigBlue";
   padding: 0px 20px;
 }

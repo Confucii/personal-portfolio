@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 import "./styles/Hero.css";
 
 const variants = {
@@ -8,12 +8,22 @@ const variants = {
 
 function Hero() {
   return (
-    <div className="Hero">
-      <div className="flex">
-        <motion.div initial="hidden" whileInView="visible" variants={variants}>
-          <div className="square"></div>
-        </motion.div>
-      </div>
+    <div className="Hero anchor" id="Home">
+      <Typewriter
+        options={{
+          strings: [
+            "Aspiring Web Developer",
+            "Tech Enthusiast",
+            "Lifelong Learner",
+            "Well Behaved Human",
+          ],
+          delay: 100,
+          autoStart: true,
+          loop: true,
+          cursor: "▍",
+          cursorClassName: "typewriter-cursor",
+        }}
+      />
     </div>
   );
 }

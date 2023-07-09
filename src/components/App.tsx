@@ -6,17 +6,44 @@ import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import { useState } from "react";
 import Greeting from "./Greeting";
+import MobileNav from "./MobileNav/MobileNav";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [isGreeted, setIsGreeted] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
+
+  if (darkMode) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+
+  function handleStatusChange() {
+    openNav && setOpenNav(!openNav);
+  }
 
   return !isGreeted ? (
     <Greeting setIsGreeted={setIsGreeted} />
   ) : (
-    <div className="App">
+    <div className="App" onClick={handleStatusChange}>
       <header>
-        <Header />
+        <Header
+          setOpenNav={setOpenNav}
+          setDarkMode={setDarkMode}
+          darkMode={darkMode}
+        />
       </header>
+      <AnimatePresence>
+        {openNav && (
+          <MobileNav
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
+            setOpenNav={setOpenNav}
+          />
+        )}
+      </AnimatePresence>
       <main>
         <section>
           <Hero />

@@ -1,3 +1,71 @@
 .Header {
-  height: 200vh;
+  color: var(--secondary-color);
+  align-items: center;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px dashed var(--secondary-color);
+}
+
+.logo {
+  height: 60px;
+  filter: var(--filter);
+}
+
+.mode-img {
+  display: block;
+  height: 40px;
+  cursor: pointer;
+  filter: invert(48%) sepia(9%) saturate(2779%) hue-rotate(165deg)
+    brightness(96%) contrast(89%);
+}
+
+.mode-img.dark {
+  filter: invert(76%) sepia(41%) saturate(799%) hue-rotate(357deg)
+    brightness(102%) contrast(91%);
+}
+
+.jump-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+.mode-btn,
+.menu-btn,
+.close-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .navigation {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    height: 45px;
+    display: block;
+    filter: var(--filter);
+    cursor: pointer;
+  }
 }

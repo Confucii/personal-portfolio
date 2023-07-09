@@ -1,0 +1,64 @@
+.MobileNav {
+  position: fixed;
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  animation: slide-in 0.5s ease-in-out;
+}
+
+.mobile-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.mobile-navigation {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 50px;
+  padding-bottom: 80px;
+}
+
+.mobile-jump-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.close-btn {
+  cursor: pointer;
+}
+
+.close-img {
+  height: 45px;
+  display: block;
+}
+
+.close-img.light {
+  filter: var(--filter-invert);
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .MobileNav {
+    display: none;
+  }
+}
