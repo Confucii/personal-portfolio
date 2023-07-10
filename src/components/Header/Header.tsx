@@ -4,6 +4,49 @@ import moon from "../../assets/images/weather-night.svg";
 import logo from "../../assets/images/logo.svg";
 import menu from "../../assets/images/menu.svg";
 import { useGlitch } from "react-powerglitch";
+import { motion } from "framer-motion";
+
+const links = ["Home", "About", "Projects", "Contact"];
+
+const headerVariants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      ease: "anticipate",
+      duration: 1,
+      when: "beforeChildren",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+};
+
+const navVariants = {
+  visible: {
+    transition: {
+      staggerChildren: 0.05,
+    },
+  },
+};
+
+const childrenVariants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      ease: "anticipate",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+};
 
 function Header({
   setDarkMode,
@@ -51,8 +94,13 @@ function Header({
   }
 
   return (
-    <div className="Header">
-      <a href="#home">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={headerVariants}
+      className="Header"
+    >
+      <motion.a variants={childrenVariants} href="#home">
         <img
           className="logo"
           ref={glitch.ref}
@@ -60,32 +108,44 @@ function Header({
           src={logo}
           alt="logo"
         />
-      </a>
-      <nav className="navigation">
-        <a className="jump-link" href="#home">
-          Home
-        </a>
-        <a className="jump-link" href="#about">
-          About
-        </a>
-        <a className="jump-link" href="#projects">
-          Projects
-        </a>
-        <a className="jump-link" href="#contact">
-          Contact
-        </a>
-        <button className="mode-btn" onClick={handleMode}>
+      </motion.a>
+      <motion.nav variants={navVariants} className="navigation">
+        {links.map((link) => {
+          return (
+            <motion.a
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 1 },
+              }}
+              variants={childrenVariants}
+              key={link}
+              className="jump-link"
+              href={`#${link}`}
+            >
+              {link}
+            </motion.a>
+          );
+        })}
+        <motion.button
+          variants={childrenVariants}
+          className="mode-btn"
+          onClick={handleMode}
+        >
           <img
             className={`mode-img ${!darkMode ? "light" : "dark"}`}
             src={!darkMode ? moon : sun}
             alt="color mode"
           />
-        </button>
-      </nav>
-      <button className="menu-btn" onClick={handleMobileNav}>
+        </motion.button>
+      </motion.nav>
+      <motion.button
+        variants={childrenVariants}
+        className="menu-btn"
+        onClick={handleMobileNav}
+      >
         <img className="menu" src={menu} alt="menu" />
-      </button>
-    </div>
+      </motion.button>
+    </motion.div>
   );
 }
 

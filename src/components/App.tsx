@@ -45,8 +45,8 @@ function App() {
         )}
       </AnimatePresence>
       <main>
-        <section>
-          <Hero />
+        <section className="section-hero">
+          <Hero darkMode={darkMode} />
         </section>
         <section>
           <Skills />

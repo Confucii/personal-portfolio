@@ -10,7 +10,18 @@ const greetVariants = {
     transition: {
       type: "spring",
       bounce: 0,
-      duration: 2,
+      duration: 1,
+    },
+  },
+};
+
+const textVariants = {
+  closed: {
+    fontSize: 0,
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
     },
   },
 };
@@ -54,8 +65,12 @@ function Greeting({ setIsGreeted }: { setIsGreeted: Function }) {
       variants={greetVariants}
       className="Greeting"
     >
-      <div className="welcome"> {welcome}</div>
-      <div className="load">{load}</div>
+      <motion.div variants={textVariants} className="welcome">
+        {welcome}
+      </motion.div>
+      <motion.div variants={textVariants} className="load">
+        {load}
+      </motion.div>
     </motion.div>
   );
 }

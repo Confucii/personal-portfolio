@@ -1,7 +1,7 @@
 import "./styles/Skills.css";
 
 function Skills() {
-  return <div className="Skills"></div>;
+  return <div className="Skills">Hola</div>;
 }
 
 export default Skills;

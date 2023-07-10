@@ -4,3 +4,8 @@ header {
   background-color: var(--primary-color);
   z-index: 2;
 }
+
+.section-hero {
+  display: flex;
+  justify-content: center;
+}

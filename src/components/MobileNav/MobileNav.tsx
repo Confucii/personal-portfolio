@@ -11,7 +11,8 @@ const containerVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      ease: "easeInOut",
+      type: "spring",
+      ease: "anticipate",
       duration: 0.5,
       when: "beforeChildren",
     },
@@ -20,8 +21,9 @@ const containerVariants = {
     opacity: 0,
     x: 300,
     transition: {
-      ease: "easeInOut",
-      duration: 0.5,
+      type: "spring",
+      ease: "anticipate",
+      duration: 0.3,
       when: "afterChildren",
     },
   },
@@ -40,7 +42,8 @@ const linkVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      ease: "easeInOut",
+      type: "spring",
+      ease: "anticipate",
     },
   },
   hidden: {

@@ -1,3 +1,91 @@
 .Hero {
-  height: 200vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary-color);
+  width: 80%;
+  height: 460px;
+}
+
+.background-vector {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 450px;
+}
+
+.name,
+.surname,
+.typewriter-class {
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.name {
+  right: clamp(50px, 10vw, 150px);
+}
+
+.surname {
+  right: 2vw;
+}
+
+.typewriter-container {
+  position: relative;
+  width: 55%;
+  left: 15vw;
+}
+
+.typewriter-class {
+  font-weight: 600;
+  font-size: clamp(2.5rem, 6vw + 0.5rem, 4rem);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.typewriter-cursor {
+  position: relative;
+  font-size: clamp(2.5rem, 6vw + 0.5rem, 4rem);
+  z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .Hero {
+    height: 420px;
+  }
+
+  .background-vector {
+    width: 380px;
+  }
+
+  .name {
+    right: clamp(50px, 12vw, 150px);
+  }
+
+  .surname {
+    right: 0;
+  }
+
+  .typewriter-container {
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Hero {
+    height: 350px;
+  }
+
+  .background-vector {
+    width: 80vw;
+  }
+
+  .surname {
+    left: 2vw;
+  }
+
+  .typewriter-container {
+    left: 0vw;
+  }
 }
