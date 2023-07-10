@@ -9,3 +9,8 @@ header {
   display: flex;
   justify-content: center;
 }
+
+.section-about {
+  display: flex;
+  justify-content: center;
+}

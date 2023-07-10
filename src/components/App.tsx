@@ -1,7 +1,7 @@
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import "./styles/App.css";
-import Skills from "./Skills/Skills";
+import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import { useState } from "react";
@@ -48,8 +48,8 @@ function App() {
         <section className="section-hero">
           <Hero darkMode={darkMode} />
         </section>
-        <section>
-          <Skills />
+        <section className="section-about">
+          <About />
         </section>
         <section>
           <Projects />
