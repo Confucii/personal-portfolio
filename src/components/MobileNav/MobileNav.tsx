@@ -3,8 +3,7 @@ import sun from "../../assets/images/white-balance-sunny.svg";
 import moon from "../../assets/images/weather-night.svg";
 import close from "../../assets/images/close.svg";
 import { motion } from "framer-motion";
-
-const links = ["Home", "About", "Projects", "Contact"];
+import { navNames } from "../data";
 
 const containerVariants = {
   visible: {
@@ -101,7 +100,7 @@ function MobileNav({
       </div>
 
       <motion.nav variants={navVariants} className="mobile-navigation">
-        {links.map((link) => {
+        {navNames.map((link) => {
           return (
             <motion.a
               whileHover={{

@@ -1,4 +1,55 @@
 .About {
-  margin-top: 20px;
-  border-top: 4px dashed var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 100px;
+  padding: 20px 15%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 30px;
+  color: var(--secondary-color);
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+    /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+
+.about-description {
+  font-size: 1.3rem;
+}
+
+.section-title {
+  text-align: center;
+  grid-column: 1/3;
+  font-size: 3rem;
+}
+
+.skills-images {
+  min-width: 265px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  row-gap: 15px;
+  column-gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .About {
+    margin-top: 30px;
+    padding: 20px 10%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .About {
+    padding: 20px 7%;
+  }
+
+  .about-description {
+    grid-column: 1/3;
+  }
+
+  .skills-images {
+    grid-column: 1/3;
+  }
 }

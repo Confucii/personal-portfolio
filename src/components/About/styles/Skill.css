@@ -1,0 +1,6 @@
+.Skill {
+  font-size: 0.85rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}

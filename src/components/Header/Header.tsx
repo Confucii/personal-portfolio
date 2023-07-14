@@ -5,8 +5,7 @@ import logo from "../../assets/images/logo.svg";
 import menu from "../../assets/images/menu.svg";
 import { useGlitch } from "react-powerglitch";
 import { motion } from "framer-motion";
-
-const links = ["Home", "About", "Projects", "Contact"];
+import { navNames } from "../data";
 
 const headerVariants = {
   visible: {
@@ -110,7 +109,7 @@ function Header({
         />
       </motion.a>
       <motion.nav variants={navVariants} className="navigation">
-        {links.map((link) => {
+        {navNames.map((link) => {
           return (
             <motion.a
               whileHover={{
