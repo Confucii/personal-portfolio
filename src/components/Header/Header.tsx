@@ -99,7 +99,7 @@ function Header({
       variants={headerVariants}
       className="Header"
     >
-      <motion.a variants={childrenVariants} href="#home">
+      <motion.a variants={childrenVariants} href="#Home">
         <img
           className="logo"
           ref={glitch.ref}

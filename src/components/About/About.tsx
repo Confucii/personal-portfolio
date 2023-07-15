@@ -10,7 +10,6 @@ function About() {
       animate={{ opacity: 1 }}
       transition={{ delay: 4, type: "spring" }}
       className="About"
-      id="About"
     >
       <div className="section-title">About</div>
       <div className="about-description">

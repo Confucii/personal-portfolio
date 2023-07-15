@@ -45,10 +45,10 @@ function App() {
         )}
       </AnimatePresence>
       <main>
-        <section className="section-hero">
+        <section className="section-hero" id="Home">
           <Hero darkMode={darkMode} />
         </section>
-        <section className="section-about">
+        <section className="section-about" id="About">
           <About />
         </section>
         <section>

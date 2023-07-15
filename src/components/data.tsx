@@ -46,3 +46,14 @@ export const skills = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
   },
 ];
+
+export const projects = [
+  {
+    name: "",
+    imgLink: "",
+    description: "",
+    technologies: "",
+    liveLink: "",
+    gitLink: "",
+  },
+];

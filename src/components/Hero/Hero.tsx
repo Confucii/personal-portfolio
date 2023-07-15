@@ -47,7 +47,7 @@ function Hero({ darkMode }: { darkMode: boolean }) {
   const img = darkMode ? darkImg : lightImg;
 
   return (
-    <div className="Hero" id="Home">
+    <div className="Hero">
       <img className="background-vector" src={img} alt="" />
       <motion.h1
         initial="hidden"
