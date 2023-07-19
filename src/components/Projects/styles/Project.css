@@ -1,0 +1,130 @@
+.Project {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project-description {
+  height: fit-content;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto 100px;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 10px;
+  position: relative;
+  left: 150px;
+  background-color: var(--project-color);
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+    /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+  border-radius: 10px;
+}
+
+.Project:nth-child(even) .project-description {
+  left: -150px;
+}
+
+.project-title {
+  font-size: 1.8rem;
+}
+
+.project-description-text {
+  grid-column: 1/3;
+  font-size: 0.9rem;
+}
+
+.project-technologies {
+  grid-row: 3/4;
+  font-size: 0.9rem;
+}
+
+.project-links {
+  grid-row: 3/4;
+  display: flex;
+  gap: 20px;
+}
+
+.image-link {
+  display: block;
+  width: 35px;
+  filter: var(--filter);
+}
+
+.project-image {
+  border-radius: 10px;
+  height: auto;
+  width: 45%;
+  aspect-ratio: 16/9;
+  box-shadow: var(--box-shadow-color-one) 5px 5px,
+    var(--box-shadow-color-two) 10px 10px,
+    var(--box-shadow-color-three) 15px 15px,
+    var(--box-shadow-color-four) 20px 20px,
+    var(--box-shadow-color-five) 25px 25px;
+}
+
+.Project:nth-child(even) .project-image {
+  box-shadow: var(--box-shadow-color-one) -5px 5px,
+    var(--box-shadow-color-two) -10px 10px,
+    var(--box-shadow-color-three) -15px 15px,
+    var(--box-shadow-color-four) -20px 20px,
+    var(--box-shadow-color-five) -25px 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Project,
+  .Project:nth-child(even) {
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  .Project + .Project {
+    padding-top: 100px;
+  }
+
+  .project-description,
+  .Project:nth-child(even) .project-description {
+    position: absolute;
+    bottom: -100px;
+    left: initial;
+    width: 80%;
+  }
+
+  .project-image,
+  .Project:nth-child(even) .project-image {
+    box-shadow: none;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Project + .Project {
+    padding-top: 150px;
+  }
+
+  .project-description,
+  .Project:nth-child(even) .project-description {
+    bottom: -150px;
+    width: 95%;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Project + .Project {
+    padding-top: 200px;
+  }
+
+  .project-description,
+  .Project:nth-child(even) .project-description {
+    bottom: -200px;
+  }
+}

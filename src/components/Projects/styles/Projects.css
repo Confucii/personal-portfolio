@@ -1,0 +1,31 @@
+.Projects {
+  padding: 30px 5% 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--secondary-color);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Projects {
+    padding: 20px 5% 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Projects {
+    padding: 20px 5% 180px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Projects {
+    padding: 20px 5% 230px;
+  }
+}

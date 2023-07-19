@@ -1,3 +1,5 @@
+import test from "../assets/images/panel.png";
+
 export const navNames = ["Home", "About", "Projects", "Contact"];
 
 export const skills = [
@@ -49,11 +51,21 @@ export const skills = [
 
 export const projects = [
   {
-    name: "",
-    imgLink: "",
-    description: "",
-    technologies: "",
-    liveLink: "",
-    gitLink: "",
+    name: "Test",
+    imgLink: test,
+    description:
+      "This is a test description of the project. It is here so that I can test how much the text affects the height of the element.",
+    technologies: "HTML, CSS, React, NodeJS",
+    liveLink: "google.com",
+    gitLink: "google.com",
+  },
+  {
+    name: "Test",
+    imgLink: test,
+    description:
+      "This is a test description of the project. It is here so that I can test how much the text affects the height of the element.",
+    technologies: "HTML, CSS, React, NodeJS",
+    liveLink: "google.com",
+    gitLink: "google.com",
   },
 ];

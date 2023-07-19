@@ -51,10 +51,10 @@ function App() {
         <section className="section-about" id="About">
           <About />
         </section>
-        <section>
+        <section className="section-projects" id="Projects">
           <Projects />
         </section>
-        <section>
+        <section className="section-contact" id="Contact">
           <Contact />
         </section>
       </main>
