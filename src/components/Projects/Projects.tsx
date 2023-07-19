@@ -8,10 +8,10 @@ function Projects() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ when: "beforeChildren", delay: 4, type: "spring" }}
+      transition={{ when: "beforeChildren", delay: 4, ease: "easeInOut" }}
       className="Projects"
     >
-      <div className="section-title">Projects</div>
+      <h1 className="section-title">Projects</h1>
       <div className="projects-container">
         {projects.map(
           (

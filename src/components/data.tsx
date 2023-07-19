@@ -1,6 +1,9 @@
 import test from "../assets/images/panel.png";
+import git from "../assets/images/github.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import email from "../assets/images/mail.svg";
 
-export const navNames = ["Home", "About", "Projects", "Contact"];
+export const navNames = ["Home", "About", "Projects", "Contacts"];
 
 export const skills = [
   {
@@ -54,7 +57,7 @@ export const projects = [
     name: "Test",
     imgLink: test,
     description:
-      "This is a test description of the project. It is here so that I can test how much the text affects the height of the element.",
+      "This is a test description of the project. It is here so that I can test how much the text affects the height of the element. ",
     technologies: "HTML, CSS, React, NodeJS",
     liveLink: "google.com",
     gitLink: "google.com",
@@ -67,5 +70,26 @@ export const projects = [
     technologies: "HTML, CSS, React, NodeJS",
     liveLink: "google.com",
     gitLink: "google.com",
+  },
+];
+
+export const links = [
+  {
+    alt: "git",
+    link: "https://github.com/Confucii",
+    image: git,
+    text: "Discover all my work here!",
+  },
+  {
+    alt: "email",
+    link: "mailto:oleksii.avdieiev.work@gmail.com",
+    image: email,
+    text: "Write me an email!",
+  },
+  {
+    alt: "linkedin",
+    link: "https://www.linkedin.com/in/confucii/",
+    image: linkedin,
+    text: "Connect with me on LinkedIn!",
   },
 ];

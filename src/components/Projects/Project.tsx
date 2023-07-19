@@ -23,22 +23,18 @@ function Project({
       className="Project"
     >
       <div className="project-description">
-        <div className="project-title">{project.name}</div>
-        <div className="project-description-text">{project.description}</div>
-        <div className="project-technologies">
+        <h2 className="project-title">{project.name}</h2>
+        <p className="project-description-text">{project.description}</p>
+        <p className="project-technologies">
           Built with: {project.technologies}
-        </div>
+        </p>
         <div className="project-links">
-          <div className="project-live-link">
-            <a className="image-link" href={project.liveLink}>
-              <img src={liveLinkImg} alt="live demo link" />
-            </a>
-          </div>
-          <div className="project-git-link">
-            <a className="image-link" href={project.gitLink}>
-              <img src={gitLinkImg} alt="git link" />
-            </a>
-          </div>
+          <a className="image-link" href={project.liveLink}>
+            <img src={liveLinkImg} alt="live demo link" />
+          </a>
+          <a className="image-link" href={project.gitLink}>
+            <img src={gitLinkImg} alt="git link" />
+          </a>
         </div>
       </div>
       <img className="project-image" src={project.imgLink} alt={project.name} />

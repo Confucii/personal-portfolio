@@ -8,16 +8,16 @@ function About() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 4, type: "spring" }}
+      transition={{ ease: "easeInOut", delay: 4 }}
       className="About"
     >
-      <div className="section-title">About</div>
-      <div className="about-description">
+      <h1 className="section-title">About</h1>
+      <p className="about-description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corrupti
         nemo consectetur sit quaerat esse odio, modi voluptate atque ex quas
         suscipit necessitatibus sed numquam dolore laudantium hic distinctio
         quos!
-      </div>
+      </p>
       <div className="skills-images">
         {skills.map((skill) => (
           <Skill key={skill.name} name={skill.name} image={skill.link} />

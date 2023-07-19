@@ -49,7 +49,7 @@ function Hero({ darkMode }: { darkMode: boolean }) {
   return (
     <div className="Hero">
       <img className="background-vector" src={img} alt="" />
-      <motion.h1
+      <motion.div
         initial="hidden"
         animate="visible"
         variants={staggerVariants}
@@ -62,8 +62,8 @@ function Hero({ darkMode }: { darkMode: boolean }) {
             </motion.span>
           );
         })}
-      </motion.h1>
-      <motion.h1
+      </motion.div>
+      <motion.div
         initial="hidden"
         animate="visibleDelayed"
         variants={staggerVariants}
@@ -76,7 +76,7 @@ function Hero({ darkMode }: { darkMode: boolean }) {
             </motion.span>
           );
         })}
-      </motion.h1>
+      </motion.div>
       <motion.div
         initial="hidden"
         animate="visible"
