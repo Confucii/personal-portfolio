@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "./styles/SocialLink.css";
 
 function SocialLink({
@@ -13,9 +14,14 @@ function SocialLink({
 }) {
   return (
     <div className="SocialLink">
-      <a className="contact-link-img" href={link}>
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        className="contact-link-img"
+        href={link}
+        download={alt === "resume" ? "resume" : false}
+      >
         <img src={image} alt={alt} />
-      </a>
+      </motion.a>
       <p className="link-text">{text}</p>
     </div>
   );

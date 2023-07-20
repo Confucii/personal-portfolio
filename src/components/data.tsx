@@ -1,7 +1,8 @@
-import test from "../assets/images/panel.png";
 import git from "../assets/images/github.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import email from "../assets/images/mail.svg";
+import file from "../assets/images/file.svg";
+import pdf from "../assets/CV.pdf";
 
 export const navNames = ["Home", "About", "Projects", "Contacts"];
 
@@ -54,22 +55,44 @@ export const skills = [
 
 export const projects = [
   {
-    name: "Test",
-    imgLink: test,
+    name: "Replica",
+    imgLink:
+      "https://raw.githubusercontent.com/Confucii/confucii/main/images/replica.gif",
     description:
-      "This is a test description of the project. It is here so that I can test how much the text affects the height of the element. ",
-    technologies: "HTML, CSS, React, NodeJS",
-    liveLink: "google.com",
-    gitLink: "google.com",
+      "Replica is a desktop website replicating main features and design of Youtube Music. It features custom built player, search, filtering and allows users to login through Google to save their favorites!",
+    technologies: "Typescript, React, Firebase",
+    liveLink: "https://confucii.github.io/replica/",
+    gitLink: "https://github.com/Confucii/replica",
   },
   {
-    name: "Test",
-    imgLink: test,
+    name: "Tag it",
+    imgLink:
+      "https://raw.githubusercontent.com/Confucii/confucii/main/images/tag-it.gif",
     description:
-      "This is a test description of the project. It is here so that I can test how much the text affects the height of the element.",
-    technologies: "HTML, CSS, React, NodeJS",
-    liveLink: "google.com",
-    gitLink: "google.com",
+      "Tag-it is a desktop website that lets users play a 'Where's Waldo'esque game with popular characters. It features a leaderboard to save best scores.",
+    technologies: "Typescript, React, Firebase",
+    liveLink: "https://confucii.github.io/tag-it/",
+    gitLink: "https://github.com/Confucii/tag-it",
+  },
+  {
+    name: "Weather",
+    imgLink:
+      "https://raw.githubusercontent.com/Confucii/confucii/main/images/weather.png",
+    description:
+      "This website utilizes Weather API and wraps it into slick and minimalistic design, to provide relevant weather data with no distractions.",
+    technologies: "Javascript",
+    liveLink: "https://confucii.github.io/weather/",
+    gitLink: "https://github.com/Confucii/weather",
+  },
+  {
+    name: "Shopping cart",
+    imgLink:
+      "https://raw.githubusercontent.com/Confucii/confucii/main/images/shopping_cart.png",
+    description:
+      "This Desktop website is a 'Fake store' type of website, which tells a story of a shop selling power armor in a cyberpunk city.",
+    technologies: "Javascript, React",
+    liveLink: "https://confucii.github.io/shopping-cart/",
+    gitLink: "https://github.com/Confucii/shopping-cart",
   },
 ];
 
@@ -81,15 +104,21 @@ export const links = [
     text: "Discover all my work here!",
   },
   {
+    alt: "linkedin",
+    link: "https://www.linkedin.com/in/confucii/",
+    image: linkedin,
+    text: "Connect with me on LinkedIn!",
+  },
+  {
     alt: "email",
     link: "mailto:oleksii.avdieiev.work@gmail.com",
     image: email,
     text: "Write me an email!",
   },
   {
-    alt: "linkedin",
-    link: "https://www.linkedin.com/in/confucii/",
-    image: linkedin,
-    text: "Connect with me on LinkedIn!",
+    alt: "resume",
+    link: pdf,
+    image: file,
+    text: "Download my resume!",
   },
 ];

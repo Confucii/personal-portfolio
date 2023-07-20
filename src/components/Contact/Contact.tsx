@@ -24,6 +24,7 @@ function Contact() {
               image={link.image}
               text={link.text}
               alt={link.alt}
+              key={link.alt}
             />
           );
         })}

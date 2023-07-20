@@ -4,6 +4,7 @@
   padding: 20px 15% 50px;
   width: 100%;
   display: grid;
+  align-items: center;
   column-gap: 30px;
   row-gap: 20px;
   color: var(--secondary-color);

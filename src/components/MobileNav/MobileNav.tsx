@@ -83,20 +83,28 @@ function MobileNav({
       }}
     >
       <div className="mobile-nav-buttons">
-        <button className="mode-btn" onClick={handleMode}>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="mode-btn"
+          onClick={handleMode}
+        >
           <img
             className={`mode-img ${!darkMode ? "light" : "dark"}`}
             src={!darkMode ? moon : sun}
             alt="color mode"
           />
-        </button>
-        <button className="close-btn" onClick={handleClose}>
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="close-btn"
+          onClick={handleClose}
+        >
           <img
             className={`close-img ${!darkMode && "light"}`}
             src={close}
             alt="exit"
           />
-        </button>
+        </motion.button>
       </div>
 
       <motion.nav variants={navVariants} className="mobile-navigation">
@@ -105,7 +113,6 @@ function MobileNav({
             <motion.a
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 1 },
               }}
               variants={linkVariants}
               key={link}

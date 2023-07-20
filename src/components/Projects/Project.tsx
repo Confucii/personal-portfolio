@@ -19,6 +19,7 @@ function Project({
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ ease: "easeInOut", duration: 0.8 }}
       className="Project"
     >
@@ -29,12 +30,20 @@ function Project({
           Built with: {project.technologies}
         </p>
         <div className="project-links">
-          <a className="image-link" href={project.liveLink}>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            className="image-link"
+            href={project.liveLink}
+          >
             <img src={liveLinkImg} alt="live demo link" />
-          </a>
-          <a className="image-link" href={project.gitLink}>
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            className="image-link"
+            href={project.gitLink}
+          >
             <img src={gitLinkImg} alt="git link" />
-          </a>
+          </motion.a>
         </div>
       </div>
       <img className="project-image" src={project.imgLink} alt={project.name} />

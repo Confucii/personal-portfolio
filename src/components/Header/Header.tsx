@@ -114,7 +114,6 @@ function Header({
             <motion.a
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 1 },
               }}
               variants={childrenVariants}
               key={link}
@@ -127,6 +126,7 @@ function Header({
         })}
         <motion.button
           variants={childrenVariants}
+          whileHover={{ scale: 1.1 }}
           className="mode-btn"
           onClick={handleMode}
         >

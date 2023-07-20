@@ -13,10 +13,14 @@ function About() {
     >
       <h1 className="section-title">About</h1>
       <p className="about-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corrupti
-        nemo consectetur sit quaerat esse odio, modi voluptate atque ex quas
-        suscipit necessitatibus sed numquam dolore laudantium hic distinctio
-        quos!
+        Passionate about problem solving. I possess an analytical mindset and a
+        relentless drive for growth. <br /> <br />
+        Programming enthralls me as it grants the creative power to interact
+        with technology actively, witnessing the immediate results of my work.
+        My natural aptitude for it only fuels my passion further. <br /> <br />
+        Since January 2023, I've been dedicated to web development, mastering
+        React and JavaScript. Eager to expand my skillset even further, I'm
+        setting my sights on Express.
       </p>
       <div className="skills-images">
         {skills.map((skill) => (
