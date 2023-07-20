@@ -79,7 +79,7 @@ export const projects = [
     imgLink:
       "https://raw.githubusercontent.com/Confucii/confucii/main/images/weather.png",
     description:
-      "This website utilizes Weather API and wraps it into slick and minimalistic design, to provide relevant weather data with no distractions.",
+      "This desktop website utilizes Weather API and wraps it into slick and minimalistic design, to provide relevant weather data with no distractions.",
     technologies: "Javascript",
     liveLink: "https://confucii.github.io/weather/",
     gitLink: "https://github.com/Confucii/weather",
@@ -89,7 +89,7 @@ export const projects = [
     imgLink:
       "https://raw.githubusercontent.com/Confucii/confucii/main/images/shopping_cart.png",
     description:
-      "This Desktop website is a 'Fake store' type of website, which tells a story of a shop selling power armor in a cyberpunk city.",
+      "This desktop website is a 'Fake store' type of website, which tells a story of a shop selling power armor in a cyberpunk city.",
     technologies: "Javascript, React",
     liveLink: "https://confucii.github.io/shopping-cart/",
     gitLink: "https://github.com/Confucii/shopping-cart",
