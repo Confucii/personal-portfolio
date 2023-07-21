@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--secondary-color);
+  color: var(--accent-color);
   width: 80%;
   height: 500px;
 }
@@ -24,7 +24,7 @@
 }
 
 .name {
-  right: clamp(50px, 10vw, 150px);
+  right: 14vw;
 }
 
 .surname {
@@ -39,14 +39,14 @@
 
 .typewriter-class {
   font-weight: 600;
-  font-size: clamp(2.5rem, 6vw + 0.5rem, 4rem);
+  font-size: clamp(2rem, 4.5vw + 0.5rem, 3.5rem);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 
 .typewriter-cursor {
   position: relative;
-  font-size: clamp(2rem, 5vw + 0.5rem, 3.5rem);
+  font-size: clamp(1.5rem, 3.5vw + 0.5rem, 3rem);
   z-index: 1;
 }
 
@@ -57,10 +57,6 @@
 
   .background-vector {
     width: 380px;
-  }
-
-  .name {
-    right: clamp(50px, 12vw, 150px);
   }
 
   .surname {
@@ -75,6 +71,10 @@
 @media screen and (max-width: 780px) {
   .Hero {
     height: 450px;
+  }
+
+  .name {
+    right: 20vw;
   }
 }
 

@@ -5,6 +5,11 @@ header {
   z-index: 3;
 }
 
+.section-title {
+  color: var(--accent-color);
+  font-weight: 400;
+}
+
 .section-hero {
   padding: 4rem 0 100px;
   display: flex;

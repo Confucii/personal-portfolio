@@ -14,7 +14,7 @@ function Contact() {
       <h1 className="section-title">Contacts</h1>
       <p className="contact-text">
         Hey! I am currently looking for new opportunities! If you are interested
-        in my persona, please contact me by email or through LinkedIn.
+        in my work, please contact me by email or through LinkedIn.
       </p>
       <div className="contact-links">
         {links.map((link) => {

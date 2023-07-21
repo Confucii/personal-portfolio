@@ -75,7 +75,7 @@ export const projects = [
     gitLink: "https://github.com/Confucii/tag-it",
   },
   {
-    name: "Weather",
+    name: "Weather App",
     imgLink:
       "https://raw.githubusercontent.com/Confucii/confucii/main/images/weather.png",
     description:

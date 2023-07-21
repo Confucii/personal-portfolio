@@ -11,7 +11,7 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [isGreeted, setIsGreeted] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [openNav, setOpenNav] = useState(false);
 
   if (darkMode) {

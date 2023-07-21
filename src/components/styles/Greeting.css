@@ -4,16 +4,15 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #050f11;
-  color: #1bcb60;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "BigBlue";
 }
 
 .Greeting :is(.welcome, .load) {
-  font-family: "BigBlue";
   padding: 0px 20px;
+  font-family: "Big Blue";
 }

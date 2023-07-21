@@ -13,14 +13,15 @@ function About() {
     >
       <h1 className="section-title">About</h1>
       <p className="about-description">
-        Passionate about problem solving. I possess an analytical mindset and a
-        relentless drive for growth. <br /> <br />
-        Programming enthralls me as it grants the creative power to interact
-        with technology actively, witnessing the immediate results of my work.
-        My natural aptitude for it only fuels my passion further. <br /> <br />
-        Since January 2023, I've been dedicated to web development, mastering
-        React and JavaScript. Eager to expand my skillset even further, I'm
-        setting my sights on Express.
+        Driven by problem-solving and continual growth, my passion lies in
+        programming, where creativity meets technological interaction. My skills
+        in this realm have been honed through a deep dedication to mastering
+        React and JavaScript since January 2023. <br />
+        <br />
+        Today, my pursuit of knowledge continues as I set my sights on expanding
+        my skillset with Express. Eager to embrace the new opportunities that
+        this learning venture presents, I am committed to delivering innovative
+        and robust web solutions.
       </p>
       <div className="skills-images">
         {skills.map((skill) => (

@@ -1,5 +1,4 @@
 .About {
-  background-color: rgba(255, 255, 255, 0.2);
   padding: 20px 15% 50px;
   width: 100%;
   display: grid;
@@ -8,10 +7,6 @@
   column-gap: 50px;
   row-gap: 30px;
   color: var(--secondary-color);
-  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
-    /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
 }
 
 .about-description {

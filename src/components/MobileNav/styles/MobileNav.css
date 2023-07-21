@@ -42,7 +42,7 @@
 }
 
 .close-img.light {
-  filter: var(--filter-invert);
+  filter: invert(95%);
 }
 
 @keyframes slide-in {

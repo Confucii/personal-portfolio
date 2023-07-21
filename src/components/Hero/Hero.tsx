@@ -15,11 +15,11 @@ const staggerVariants = {
 
 const childrenVariants = {
   visible: {
-    fontSize: "clamp(2.5rem, 6vw + 3.5rem, 5rem)",
+    fontSize: "clamp(2rem, 4vw + 2rem, 5rem)",
     transition: { type: "spring", ease: "anticipate" },
   },
   visibleDelayed: {
-    fontSize: "clamp(2.5rem, 6vw + 3.5rem, 5rem)",
+    fontSize: "clamp(2rem, 4vw + 2rem, 5rem)",
     transition: { type: "spring", ease: "anticipate" },
   },
   hidden: { fontSize: 0 },
@@ -40,8 +40,8 @@ const typewriterVariants = {
   },
 };
 
-const name = "Oleksii".split("");
-const surname = "Avdieiev".split("");
+const name = "Alex".split("");
+const surname = "Avdeyev".split("");
 
 function Hero({ darkMode }: { darkMode: boolean }) {
   const img = darkMode ? darkImg : lightImg;

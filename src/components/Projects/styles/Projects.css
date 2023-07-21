@@ -14,18 +14,18 @@
 
 @media screen and (max-width: 1000px) {
   .Projects {
-    padding: 20px 5% 130px;
+    padding: 20px 5% 180px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .Projects {
-    padding: 20px 5% 180px;
+    padding: 20px 5% 280px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .Projects {
-    padding: 20px 5% 230px;
+    padding: 20px 5% 330px;
   }
 }
