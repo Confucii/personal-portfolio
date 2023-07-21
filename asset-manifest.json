@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.9345f8fb.css",
-    "main.js": "/personal-portfolio/static/js/main.b8d62291.js",
+    "main.css": "/personal-portfolio/static/css/main.a6454dfb.css",
+    "main.js": "/personal-portfolio/static/js/main.faf4f11b.js",
     "static/media/BigBlueTerm437NerdFont-Regular.woff": "/personal-portfolio/static/media/BigBlueTerm437NerdFont-Regular.e160ba8e660aa8247f34.woff",
     "static/media/BigBlueTerm437NerdFont-Regular.woff2": "/personal-portfolio/static/media/BigBlueTerm437NerdFont-Regular.cf996da3c8cd0953ca23.woff2",
     "static/media/CV.pdf": "/personal-portfolio/static/media/CV.195611bf47fb9690bf49.pdf",
     "static/media/shell-dark.svg": "/personal-portfolio/static/media/shell-dark.7f44190a812b78c3e60ee331a1a4ff25.svg",
-    "static/media/shell.svg": "/personal-portfolio/static/media/shell.1566dc23fb90708e3c99bf35e564a29f.svg",
+    "static/media/shell.svg": "/personal-portfolio/static/media/shell.e8dd5951206ca323bff3d25e9f57444e.svg",
     "static/media/logo.svg": "/personal-portfolio/static/media/logo.f64d6936faa83bbab45e4031f54223d0.svg",
     "static/media/source-repository.svg": "/personal-portfolio/static/media/source-repository.a5beb56ac39fab2a429a3adef26f06cb.svg",
     "static/media/github.svg": "/personal-portfolio/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
@@ -19,11 +19,11 @@
     "static/media/open-in-new.svg": "/personal-portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
     "static/media/close.svg": "/personal-portfolio/static/media/close.97d4c0a10ac97607dc659ebfaacb9220.svg",
     "static/media/menu.svg": "/personal-portfolio/static/media/menu.2d4061552fac064ed07690e82d099e1d.svg",
-    "main.9345f8fb.css.map": "/personal-portfolio/static/css/main.9345f8fb.css.map",
-    "main.b8d62291.js.map": "/personal-portfolio/static/js/main.b8d62291.js.map"
+    "main.a6454dfb.css.map": "/personal-portfolio/static/css/main.a6454dfb.css.map",
+    "main.faf4f11b.js.map": "/personal-portfolio/static/js/main.faf4f11b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9345f8fb.css",
-    "static/js/main.b8d62291.js"
+    "static/css/main.a6454dfb.css",
+    "static/js/main.faf4f11b.js"
   ]
 }
