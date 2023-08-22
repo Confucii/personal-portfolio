@@ -31,7 +31,7 @@ function Greeting({ setIsGreeted }: { setIsGreeted: Function }) {
 
   const welcome = useRandomReveal({
     isPlaying: true,
-    duration: 2,
+    duration: 1,
     revealDuration: 1,
     characterSet: [0, 1],
     updateInterval: 0.1,
@@ -41,7 +41,7 @@ function Greeting({ setIsGreeted }: { setIsGreeted: Function }) {
 
   const load = useRandomReveal({
     isPlaying: true,
-    duration: 4,
+    duration: 2.5,
     revealDuration: 0.5,
     characterSet: [0, 1],
     updateInterval: 0.1,
@@ -51,10 +51,10 @@ function Greeting({ setIsGreeted }: { setIsGreeted: Function }) {
     onComplete: () => {
       setTimeout(() => {
         setAnimate(false);
-      }, 1000);
+      }, 500);
       setTimeout(() => {
         setIsGreeted(true);
-      }, 2800);
+      }, 1800);
     },
   });
 

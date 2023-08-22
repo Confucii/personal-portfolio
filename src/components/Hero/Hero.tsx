@@ -89,7 +89,7 @@ function Hero({ darkMode }: { darkMode: boolean }) {
               "Aspiring Web Developer",
               "Tech Enthusiast",
               "Lifelong Learner",
-              "Well Behaved Human",
+              "Persistent Coder",
             ],
             delay: 100,
             autoStart: true,
