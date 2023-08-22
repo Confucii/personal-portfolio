@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.a6454dfb.css",
-    "main.js": "/personal-portfolio/static/js/main.48cde501.js",
+    "main.js": "/personal-portfolio/static/js/main.bacc03f2.js",
     "static/media/BigBlueTerm437NerdFont-Regular.woff": "/personal-portfolio/static/media/BigBlueTerm437NerdFont-Regular.e160ba8e660aa8247f34.woff",
     "static/media/BigBlueTerm437NerdFont-Regular.woff2": "/personal-portfolio/static/media/BigBlueTerm437NerdFont-Regular.cf996da3c8cd0953ca23.woff2",
     "static/media/CV.pdf": "/personal-portfolio/static/media/CV.195611bf47fb9690bf49.pdf",
@@ -20,10 +20,10 @@
     "static/media/close.svg": "/personal-portfolio/static/media/close.97d4c0a10ac97607dc659ebfaacb9220.svg",
     "static/media/menu.svg": "/personal-portfolio/static/media/menu.2d4061552fac064ed07690e82d099e1d.svg",
     "main.a6454dfb.css.map": "/personal-portfolio/static/css/main.a6454dfb.css.map",
-    "main.48cde501.js.map": "/personal-portfolio/static/js/main.48cde501.js.map"
+    "main.bacc03f2.js.map": "/personal-portfolio/static/js/main.bacc03f2.js.map"
   },
   "entrypoints": [
     "static/css/main.a6454dfb.css",
-    "static/js/main.48cde501.js"
+    "static/js/main.bacc03f2.js"
   ]
 }
