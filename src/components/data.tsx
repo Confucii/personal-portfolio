@@ -8,14 +8,6 @@ export const navNames = ["Home", "About", "Projects", "Contacts"];
 
 export const skills = [
   {
-    name: "HTML",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
-  },
-  {
-    name: "CSS",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
-  },
-  {
     name: "Javascript",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
@@ -28,6 +20,26 @@ export const skills = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
+    name: "Express",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  {
+    name: "MongoDB",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    name: "HTML",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+  },
+  {
+    name: "CSS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+  },
+  {
+    name: "Node JS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
     name: "Jest",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
   },
@@ -38,10 +50,6 @@ export const skills = [
   {
     name: "Git",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-  },
-  {
-    name: "Node JS",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
     name: "Firebase",

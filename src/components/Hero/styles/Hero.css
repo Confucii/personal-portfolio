@@ -40,8 +40,7 @@
 .typewriter-class {
   font-weight: 600;
   font-size: clamp(2rem, 4.5vw + 0.5rem, 3.5rem);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  white-space: normal;
 }
 
 .typewriter-cursor {
