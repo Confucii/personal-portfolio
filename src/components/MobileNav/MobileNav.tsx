@@ -117,7 +117,11 @@ function MobileNav({
               variants={linkVariants}
               key={link}
               className="mobile-jump-link"
-              href={`#${link}`}
+              href={
+                link !== "Blog"
+                  ? `#${link}`
+                  : "https://confucii-blog-client.netlify.app/"
+              }
               onClick={handleClose}
             >
               {link}

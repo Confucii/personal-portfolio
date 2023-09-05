@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 825px) {
   .MobileNav {
     display: none;
   }

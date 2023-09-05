@@ -4,7 +4,7 @@ import email from "../assets/images/mail.svg";
 import file from "../assets/images/file.svg";
 import pdf from "../assets/CV.pdf";
 
-export const navNames = ["Home", "About", "Projects", "Contacts"];
+export const navNames = ["Home", "About", "Projects", "Contacts", "Blog"];
 
 export const skills = [
   {

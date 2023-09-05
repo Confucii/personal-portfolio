@@ -118,7 +118,11 @@ function Header({
               variants={childrenVariants}
               key={link}
               className="jump-link"
-              href={`#${link}`}
+              href={
+                link !== "Blog"
+                  ? `#${link}`
+                  : "https://confucii-blog-client.netlify.app/"
+              }
             >
               {link}
             </motion.a>
