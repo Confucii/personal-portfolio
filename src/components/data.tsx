@@ -63,6 +63,16 @@ export const skills = [
 
 export const projects = [
   {
+    name: "Blog",
+    imgLink:
+      "https://raw.githubusercontent.com/Confucii/confucii/main/images/cms.gif",
+    description:
+      "A blogging system consisting of three main parts: a RESTful API, a client-side application, and a content management system (CMS) for administrators. It allows admins to perform CRUD operations to manage blog efficiently.",
+    technologies: "Typescript, React, NodeJS, Express, MongoDB",
+    liveLink: "https://confucii-blog-client.netlify.app/",
+    gitLink: "https://github.com/Confucii/blog-api",
+  },
+  {
     name: "Replica",
     imgLink:
       "https://raw.githubusercontent.com/Confucii/confucii/main/images/replica.gif",
