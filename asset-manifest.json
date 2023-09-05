@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.3b5c8b3a.css",
-    "main.js": "/personal-portfolio/static/js/main.e020b1ee.js",
+    "main.css": "/personal-portfolio/static/css/main.854cb0ee.css",
+    "main.js": "/personal-portfolio/static/js/main.d6da0958.js",
     "static/media/BigBlueTerm437NerdFont-Regular.woff": "/personal-portfolio/static/media/BigBlueTerm437NerdFont-Regular.e160ba8e660aa8247f34.woff",
     "static/media/BigBlueTerm437NerdFont-Regular.woff2": "/personal-portfolio/static/media/BigBlueTerm437NerdFont-Regular.cf996da3c8cd0953ca23.woff2",
     "static/media/CV.pdf": "/personal-portfolio/static/media/CV.eb47652e1ff7a709b17d.pdf",
@@ -19,11 +19,11 @@
     "static/media/open-in-new.svg": "/personal-portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
     "static/media/close.svg": "/personal-portfolio/static/media/close.97d4c0a10ac97607dc659ebfaacb9220.svg",
     "static/media/menu.svg": "/personal-portfolio/static/media/menu.2d4061552fac064ed07690e82d099e1d.svg",
-    "main.3b5c8b3a.css.map": "/personal-portfolio/static/css/main.3b5c8b3a.css.map",
-    "main.e020b1ee.js.map": "/personal-portfolio/static/js/main.e020b1ee.js.map"
+    "main.854cb0ee.css.map": "/personal-portfolio/static/css/main.854cb0ee.css.map",
+    "main.d6da0958.js.map": "/personal-portfolio/static/js/main.d6da0958.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b5c8b3a.css",
-    "static/js/main.e020b1ee.js"
+    "static/css/main.854cb0ee.css",
+    "static/js/main.d6da0958.js"
   ]
 }
