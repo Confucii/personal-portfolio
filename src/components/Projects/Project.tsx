@@ -46,7 +46,13 @@ function Project({
           </motion.a>
         </div>
       </div>
-      <img className="project-image" src={project.imgLink} alt={project.name} />
+      <a className="project-href" href={project.liveLink}>
+        <img
+          className="project-image"
+          src={project.imgLink}
+          alt={project.name}
+        />
+      </a>
     </motion.div>
   );
 }

@@ -69,6 +69,10 @@
     var(--box-shadow-color-five) 25px 25px;
 }
 
+.project-href {
+  display: contents;
+}
+
 .Project:nth-child(even) .project-image {
   box-shadow: var(--box-shadow-color-one) -5px 5px,
     var(--box-shadow-color-two) -10px 10px,
